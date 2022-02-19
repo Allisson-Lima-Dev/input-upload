@@ -50,7 +50,7 @@ export default function InputUpload() {
         <img
           src="https://www.minhaconexao.com.br/blog/wp-content/uploads/2017/04/upload.png"
           alt="upload"
-          style={{ width: "50px", marginRight: "5px" }}
+          style={{ width: "40px", marginRight: "5px" }}
           onClick={handleClickRef}
         />
         <h3 onClick={handleClickRef}>Upload</h3>
@@ -64,12 +64,31 @@ export default function InputUpload() {
       >
         {fileImage &&
           fileImage.map((img) => (
-            <img
-              src={img}
-              alt=""
-              key={img}
-              style={{ width: "200px", height: "200px", margin: "5px" }}
-            />
+            <div key={img} style={{ display: "flex", flexDirection: "column" }}>
+              <img
+                src={img}
+                alt=""
+                style={{ width: "200px", height: "200px", margin: "5px" }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "flex-end",
+                  justifyContent: "flex-end",
+                }}
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/6821/6821191.png"
+                  alt=""
+                  style={{
+                    width: "17px",
+                    height: "17px",
+                    cursor: "pointer",
+                  }}
+                  
+                />
+              </div>
+            </div>
           ))}
       </div>
     </div>
