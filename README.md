@@ -1,6 +1,7 @@
 ## INPUT UPLOAD
 
-```/* eslint-disable @next/next/no-img-element */
+```ruby
+/* eslint-disable @next/next/no-img-element */
 import React, { ChangeEvent, useState, useRef } from "react";
 
 export default function InputUpload() {
