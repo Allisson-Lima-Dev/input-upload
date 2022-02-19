@@ -35,6 +35,7 @@ export default function InputUpload() {
           marginTop: "20px",
           marginBottom: "20px",
         }}
+        onClick={handleClickRef}
       >
         <input
           type={"file"}
@@ -51,9 +52,8 @@ export default function InputUpload() {
           src="https://www.minhaconexao.com.br/blog/wp-content/uploads/2017/04/upload.png"
           alt="upload"
           style={{ width: "40px", marginRight: "5px" }}
-          onClick={handleClickRef}
         />
-        <h3 onClick={handleClickRef}>Upload</h3>
+        <h3>Upload</h3>
       </div>
       <div
         style={{
