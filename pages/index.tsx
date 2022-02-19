@@ -13,8 +13,18 @@ export default function InputUpload() {
   };
   const inputRef = useRef<HTMLInputElement | null>(null);
   const handleClickRef = () => inputRef.current?.click();
+
   return (
-    <>
+    <div
+      style={{
+        width: "90%",
+        margin: "auto",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
       <div>
         <input
           type={"file"}
@@ -33,11 +43,24 @@ export default function InputUpload() {
           style={{ width: "50px", cursor: "pointer" }}
           onClick={handleClickRef}
         />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          width: "70%",
+        }}
+      >
         {fileImage &&
           fileImage.map((img) => (
-            <img src={img} alt="" key={img} style={{ width: "100px" }} />
+            <img
+              src={img}
+              alt=""
+              key={img}
+              style={{ width: "200px", height: "200px", margin: "5px" }}
+            />
           ))}
       </div>
-    </>
+    </div>
   );
 }
