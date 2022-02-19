@@ -25,7 +25,17 @@ export default function InputUpload() {
         flexDirection: "column",
       }}
     >
-      <div>
+      <div
+        style={{
+          display: "flex",
+          cursor: "pointer",
+          backgroundColor: "#2490ff",
+          padding: "5px",
+          borderRadius: "5px",
+          marginTop: "20px",
+          marginBottom: "20px",
+        }}
+      >
         <input
           type={"file"}
           multiple
@@ -40,9 +50,10 @@ export default function InputUpload() {
         <img
           src="https://www.minhaconexao.com.br/blog/wp-content/uploads/2017/04/upload.png"
           alt="upload"
-          style={{ width: "50px", cursor: "pointer" }}
+          style={{ width: "50px", marginRight: "5px" }}
           onClick={handleClickRef}
         />
+        <h3 onClick={handleClickRef}>Upload</h3>
       </div>
       <div
         style={{
