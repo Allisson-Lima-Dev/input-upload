@@ -81,11 +81,13 @@ export default function InputUpload() {
                   src="https://cdn-icons-png.flaticon.com/128/6821/6821191.png"
                   alt=""
                   style={{
-                    width: "17px",
-                    height: "17px",
+                    width: "20px",
+                    height: "20px",
                     cursor: "pointer",
                   }}
-                  
+                  onClick={() =>
+                    setFileImage(fileImage.filter((e) => e !== img))
+                  }
                 />
               </div>
             </div>
